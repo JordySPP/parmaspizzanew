@@ -1,0 +1,104 @@
+.contenedor-main-preguntas-frecuentes {
+    background-color: #ED1C24;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    // border-left: 10px solid #fff;
+    // border-right: 10px solid #fff;
+
+    .contenedor-titulo {
+        background-color: #F2F2F7;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    h1 {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 5px solid #ED1C24;
+        color: #333;
+
+        
+    }
+
+    .contenedor-preguntas-frecuentes {
+    
+        background-color: #F2F2F7;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+
+        
+    }
+
+    .preguntas-frecuentes {
+        padding: 25px;
+        text-align: center;
+        text-decoration: none;
+
+        h2 {
+            color: #333;
+            font-size: 30px;
+        }
+
+        p {
+            margin: 0.25vh;
+            font-size: 2vhpx;
+            color: #555;
+
+            a {
+                text-decoration: none;
+                color: #F26522;
+
+                &:hover {
+                    transition: 1s all;
+                    transform: scale(1.2);
+                    text-shadow: #000;
+                    color: #00A651;
+                }
+            }
+        }
+
+        ul {
+            text-decoration: none;
+            list-style: none;
+
+            li {
+                margin: 5px;
+                text-decoration: none;
+                color: #555;
+            }
+        }
+    }
+}
+
+// Responsive design preguntasfrecuentes
+@media (max-width: 700px) {
+    .preguntas-frecuentes {
+        h2 {
+            color: #333;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        p {
+            margin: 5px;
+            font-size: 1vh;
+            color: #555;
+            text-align: justify;
+            align-items: center;
+        }
+
+        ul {
+            text-align: justify;
+
+            li {
+                margin: 5px;
+                text-decoration: none;
+                color: #555;
+                text-align: justify;
+            }
+        }
+    }
+}

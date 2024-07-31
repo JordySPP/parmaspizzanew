@@ -1,0 +1,23 @@
+<div id="{{acercanosotros.id}}" class="{{acercanosotros.clase}}">
+    <section id="{{acercanosotros.seccion.id}}" class="{{acercanosotros.seccion.clase}}">
+        <h1>{{acercanosotros.seccion.titulo}}</h1>
+        {{#each acercanosotros.seccion.parrafos}}
+        <p>{{this}}</p>
+        {{/each}}
+        {{#each acercanosotros.seccion.subsecciones}}
+        <h2>{{subtitulo}}</h2>
+        {{#if lista}}
+        <ul>
+            {{#each lista}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        {{/if}}
+        {{#if parrafos}}
+        {{#each parrafos}}
+        <p>{{this}}</p>
+        {{/each}}
+        {{/if}}
+        {{/each}}
+    </section>
+</div>

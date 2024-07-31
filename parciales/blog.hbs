@@ -1,0 +1,15 @@
+<section class="blog">
+    <h1>Explorando el Sabor Auténtico de Parma's Pizza</h1>
+    {{#each blogs}}
+    <div class="blo">
+        <h2>{{titulo}}</h2>
+        <p>{{contenido}}</p>
+    </div>
+    {{/each}}
+    <div class="bloautor">
+        <p>{{autor}} {{fecha}}</p>
+        <picture>
+            <img src="{{imagenAutor}}" alt="">
+        </picture>
+    </div>
+</section>

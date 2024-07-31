@@ -1,0 +1,19 @@
+<header>
+    <div class="titulo-parmas-pizza">
+        <h1>Parma's Pizza</h1>
+    </div>
+    <div>
+        <img src="Imagenes/logo.png" alt="Logo" />
+    </div>
+    <nav>
+        <ul>
+            {{#each menuOptions}}
+            <li>
+                <a href="{{url}}" class="{{#if active}}active{{/if}}">
+                    {{label}}
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </nav>
+</header>

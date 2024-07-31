@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Pagina: Catalogo Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="less/estilo.less" />
+</head>
+
+<body>
+    {{>header}}
+    <section class="container">
+        <section class="Menu">
+            <div class="estilosMenu">
+                <h1>Menú</h1>
+                <p>Desde la masa hasta la salsa, ingredientes 100% frescos</p>
+            </div>
+            <div class="h1pt">
+                <h1 class="h1pt2">Pizzas Tamaño</h1>
+            </div>
+            <div class="tamaniopizzas">
+                {{>menuTP}}
+            </div>
+            </div>
+            <section class="Entradas">
+                <div class="Entradas-right">
+                    <h2>Entradas</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Foccacia Tomate y Queso............................</td>
+                                <td>L.99</td>
+                            </tr>
+                            <tr>
+                                <td>Pan con Ajo(Orden de 6)...............................</td>
+                                <td>L.64</td>
+                            </tr>
+                            <tr>
+                                <td>Pan con Ajo y Mozzarella(Orden de 6).........</td>
+                                <td>L.82</td>
+                            </tr>
+                            <tr>
+                                <td>Bruschettas(Orden de 6)...............................</td>
+                                <td>L.91</td>
+                            </tr>
+                            <tr>
+                                <td>Especial Parmas con Pepperoni...................</td>
+                                <td>L.92</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="Entradas2">
+                <h2 class="Textcenter">Pa' Pikar</h2>
+                <div class="Entradas-left">
+                    <div class="Entradas-left-Detalle">
+                        <div class="imgELD">
+                            <img src="Imagenes/Entradas/mozzarella-sticks.png" alt="Mozzarella Sticks">
+                        </div>
+                        <h1>Mozzarella Sticks</h1>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Orden 4</th>
+                                    <th>Orden 6</th>
+                                    <th>Orden 12</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>L.70</td>
+                                    <td>L.120</td>
+                                    <td>L.204</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="Entradas-left-Detalle">
+                        <div class="imgELD">
+                            <img src="Imagenes/Entradas/Jalapeno-bites.jpg" alt="Mozzarella Sticks">
+                        </div>
+                        <h1>Jalapeño Bites</h1>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Orden 4</th>
+                                    <th>Orden 6</th>
+                                    <th>Orden 12</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>L.70</td>
+                                    <td>L.120</td>
+                                    <td>L.204</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="Entradas-left-Detalle">
+                        <div class="imgELD">
+                            <img src="Imagenes/Entradas/PapasPepperoni.jpg" alt="Mozzarella Sticks">
+                        </div>
+                        <h1>Papas de Pepperoni</h1>
+                        <p>PERSONAL CON MOZZARELLA</p>
+                        <table class="Textcenter">
+                            <thead>
+                                <tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>L.150</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="container-detalle">
+            <h1 class="cdp">Pizzas</h1>
+            <div class="container-detalle-sub">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="TextLef">Descripción</th>
+                            <th style="background-color: #FFC162;">
+                                <h1>P4</h1>
+                            </th>
+                            <th style="background-color: #FFC162;">
+                                <h1>SP4</h1>
+                            </th>
+                            <th style="background-color: #FFC162;">
+                                <h1>M8</h1>
+                            </th>
+                            <th style="background-color: #FFC162;">
+                                <h1>F8</h1>
+                            </th>
+                            <th style="background-color: #FFC162;">
+                                <h1>G12</h1>
+                            </th>
+                            <th style="background-color: #FFC162;">
+                                <h1>EG16</h1>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{>menu}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="Textcenter">
+            <div class="p">
+                <p>TIEMPO DE ELABORACIÓN 35-40 MINUTOS</p>
+            </div>
+        </div>
+    </section>
+    <section class="Combos">
+        <h1 class="">Combos</h1>
+        <div class="Combos-detalle">
+            <div class="imgCombo">
+                <img src="Imagenes/Combos/COMBOS-01.png" alt="Mozzarella Sticks">
+            </div>
+            <div class="imgCombo">
+                <img src="Imagenes/Combos/COMBOS-02.png" alt="Mozzarella Sticks">
+            </div>
+            <div class="imgCombo">
+                <img src="Imagenes/Combos/COMBOS-03.png" alt="Mozzarella Sticks">
+            </div>
+            <div class="imgCombo">
+                <img src="Imagenes/Combos/COMBOS-04.png" alt="Mozzarella Sticks">
+            </div>
+            <div class="imgCombo">
+                <img src="Imagenes/Combos/COMBOS-05.png" alt="Mozzarella Sticks">
+            </div>
+            <div class="imgCombo">
+                <img src="Imagenes/Combos/COMBOS-06.png" alt="Mozzarella Sticks">
+            </div>
+        </div>
+    </section>
+    <section class="Calzones">
+        <div class="Calzones-Detalle">
+            <h1>Calzones</h1>
+            <table>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Jamón................
+                        </td>
+                        <td>L.99</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pepperoni...........
+                        </td>
+                        <td>L.117</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4 Carnes.............
+                        </td>
+                        <td>L.150</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Vegetariano........
+                        </td>
+                        <td>L.138</td>
+                    </tr>
+                    <tr>
+                        <td>Super Calzone....</td>
+                        <td>L.173</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="Adicionales">
+            <div class="Adicionales-Detalle">
+                <h1>Adicionales</h1>
+                <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>Orilla de queso........</td>
+                            <td>L.73</td>
+                        </tr>
+                        <tr>
+                            <td>Jamón.....................</td>
+                            <td>L.30</td>
+                        </tr>
+                        <tr>
+                            <td>Pepperoni................</td>
+                            <td>L.43</td>
+                        </tr>
+                        <tr>
+                            <td>Hongos....................</td>
+                            <td>L.38</td>
+                        </tr>
+                        <tr>
+                            <td>Jalapeños...............</td>
+                            <td>L.26</td>
+                        </tr>
+                        <tr>
+                            <td>Chile y Cebolla........</td>
+                            <td>L.24</td>
+                        </tr>
+                        <tr>
+                            <td>Carne.......................</td>
+                            <td>L.45</td>
+                        </tr>
+                        <tr>
+                            <td>Aceitunas negras....</td>
+                            <td>L.40</td>
+                        </tr>
+                        <tr>
+                            <td>Bacon......................</td>
+                            <td>L.46</td>
+                        </tr>
+                        <tr>
+                            <td>Doble quesillo.........</td>
+                            <td>L.42</td>
+                        </tr>
+                        <tr>
+                            <td>Salami.....................</td>
+                            <td>L.45</td>
+                        </tr>
+                        <tr>
+                            <td>Queso parmesano..</td>
+                            <td>L.13</td>
+                        </tr>
+                        <tr>
+                            <td>Chile hojuela...........</td>
+                            <td>L.13</td>
+                        </tr>
+                        <tr>
+                            <td>Piña.........................</td>
+                            <td>L.31</td>
+                        </tr>
+                        <tr>
+                            <td>Pollo........................</td>
+                            <td>L.37</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <section class="Refrescos">
+            <div class="Refrescos-Detalle">
+                <h1>REFRESCOS</h1>
+                <h2>DESECHABLE</h2>
+                <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>COCA COLA..........................</td>
+                            <td>L.25</td>
+                        </tr>
+                        <tr>
+                            <td>PEPSI....................................</td>
+                            <td>L.25</td>
+                        </tr>
+                        <tr>
+                            <td>COPAN DRY..........................</td>
+                            <td>L.25</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>DE VIDRIO</h2>
+                <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>COCA COLA..........................</td>
+                            <td>L.17</td>
+                        </tr>
+                        <tr>
+                            <td>PEPSI....................................</td>
+                            <td>L.17</td>
+                        </tr>
+                        <tr>
+                            <td>COPAN DRY..........................</td>
+                            <td>L.17</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>LATA</h2>
+                <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>COCA COLA..........................</td>
+                            <td>L.20</td>
+                        </tr>
+                        <tr>
+                            <td>PEPSI....................................</td>
+                            <td>L.20</td>
+                        </tr>
+                        <tr>
+                            <td>SEVEN-UP.............................</td>
+                            <td>L.20</td>
+                        </tr>
+                        <tr>
+                            <td>CANADRY.............................</td>
+                            <td>L.20</td>
+                        </tr>
+                        <tr>
+                            <td>TÉ LIPTON............................</td>
+                            <td>L.20</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>NATURALES</h2>
+                <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>TÉ FRIO PACHI.....................</td>
+                            <td>L.35</td>
+                        </tr>
+                        <tr>
+                            <td>TA-TUICE..............................</td>
+                            <td>L.35</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>REFRECO GRANDE</h2>
+                <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>COCA COLA 2LTS.................</td>
+                            <td>L.55</td>
+                        </tr>
+                        <tr>
+                            <td>COCA COLA VIDRIO 1.25.....</td>
+                            <td>L.30</td>
+                        </tr>
+                        <tr>
+                            <td>PEPSI 1.25............................</td>
+                            <td>L.39</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        {{>menucervezas}}
+    </section>
+</body>
+
+{{>footer}}
+
+</html>

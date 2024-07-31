@@ -1,0 +1,476 @@
+.Menu {
+    background-color: @color-white;
+
+    .estilosMenu {
+        background-color: @black-color;
+        text-align: center;
+        padding: 5px;
+
+        h1 {
+            font-size: 35;
+            font-weight: bold;
+            color: @bg-color-light-gray;
+            font-size: 24px;
+        }
+        p {
+            color: #F2F2F7;
+        }
+    }
+
+    .h1pt {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: @bg-color-red;
+        color: @color-white;
+        width: 100%;
+
+        .h1pt2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+            padding: 5px;
+            background: @bg-color-red;
+        }
+    }
+
+    .tamaniopizzas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .tamaniopizzas-detalle {
+            text-align: center;
+            padding: 0px;
+            margin: 5px;
+            background: @color-green;
+            color: @color-white;
+            border-radius: 5px;
+
+            img {
+                border-radius: 5px;
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+            }
+        }
+
+        .tamaniopizzas-detalle:hover {
+            transition: 1s all;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .colorp {
+            color: #F0E302;
+        }
+    }
+    
+    .Entradas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .Entradas-right {
+            background: @bg-color-red;
+            color: @white-color;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 0px;
+            h2 {
+                text-align: center;
+                padding: 5px;
+                background: @color-green;
+                border-radius: 5px 5px 0 0;
+            }
+        }
+        .Entradas-right:hover {
+            transform: scale(1.1);
+            transition: 1s all;
+            cursor: pointer;
+        }
+
+        .Entradas-left td {
+            text-align: center;
+        }
+
+        
+    }
+
+    .Entradas2 {
+        background: @color-green;
+        color: @white-color;
+
+        .Textcenter {
+            background-color: @bg-color-red;
+        }
+        
+        .Entradas-left {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .Entradas-left-Detalle {
+                display: block;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #F0E302;
+                border-radius: 5px;
+                padding: 5px;
+                margin: 5px;
+                background-color: @bg-color-red;
+                h1 {
+                    text-align: center;
+                    padding: 2px 0px 0px 0px;
+                }
+
+                .imgELD {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 0px;
+                    margin: 0px;
+
+                    img {
+                        display: block;
+                        height: 100%;
+                        object-fit: cover;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 5px;
+                    }
+                }
+            } 
+
+            .Entradas-left-Detalle:hover {
+                transition: 1s all;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+            
+        }
+    }
+
+
+}
+
+.container-detalle {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    .container-detalle-sub {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead tr {
+            background-color: @color-green;
+            color: @white-color;
+        }
+    }
+
+    .backgroundGreen {
+        padding: 0px 0px 0px 2px;
+        background: @color-green;
+        color: @white-color;
+    }
+
+}
+
+.Combos{ 
+
+    h1{
+    text-align: center;
+    background-color: @color-green;
+    color: @white-color;
+    }
+
+    .Combos-detalle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: @white-color;
+
+        .imgCombo {
+            padding: 0px;
+            margin: 5px;
+            background-color: #F2F2F7;
+            border-radius: 10px;
+
+            img {
+                width: 250px;
+                height: 200px;
+            }
+        }
+
+        .imgCombo:hover {
+            transition: 1s all;
+            transform: scale(1.1);
+        }
+    }   
+}
+
+.Calzones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: @color-green;
+    color: @white-color;
+    padding: 5px;
+    margin: 0px;
+    .Calzones-Detalle{
+
+    h1 {
+        margin: 10px 0;
+        background-color: @bg-color-red;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 10px;
+        tbody {
+
+            tr {
+                cursor: pointer;
+                font-size: 18px;
+            }
+            tr:hover {
+                background: @bg-color-red;
+                transition: 1s all;
+                }
+            } 
+        }
+    }  
+}
+
+.Adicionales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: @white-color;
+    padding: 5px;
+    background: @bg-color-red;
+
+    .Adicionales-Detalle{ 
+    h1 {
+        margin: 10px 0;
+        background-color: @color-green;
+        border-radius: 10px;
+        text-align: center;
+        }
+    }
+    table {
+        border-collapse: collapse;
+        margin-bottom: 10px;
+        tbody{
+            tr {
+                cursor: pointer;
+                font-size: 18px;
+            }
+            tr:hover {
+                background: @color-green;
+                transition: 1s all;
+            }
+        }
+    }
+}
+
+.Refrescos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: @white-color;
+    padding: 5px;
+    background: @color-green;
+        h1 {
+        font-size: 24px;
+        text-align: center;
+        }
+         h2 {
+        text-align: center;
+        font-size: 18px;
+        }
+         table {
+        border-collapse: collapse;
+        margin-bottom: 10px;
+
+        tbody tr {
+            cursor: pointer;
+            }
+            tr:hover {
+                background: @bg-color-red;
+                transition: 1s all;
+            }
+        } 
+
+        .Refrescos-Detalle h1 {
+            margin: 10px 0;
+            background-color: @bg-color-red;
+            border-radius: 10px;
+        }
+}
+
+
+.Cervezas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bg-color-red;
+    padding: 5px;
+    color: @white-color;
+        h1 {
+        font-size: 24px;
+        text-align: center;
+        }
+    
+         table {
+        border-collapse: collapse;
+        margin-bottom: 10px;
+
+        tbody tr {
+            cursor: pointer;
+            }   
+            tr:hover {
+                background: @color-green;
+                transition: 1s all;
+             }
+        }
+        .Cervezas-Detalles h1 {
+            margin: 10px 0;
+            background-color: @color-green;
+            border-radius: 10px;
+        }
+}
+
+
+
+
+
+.precios {
+    text-align: center;
+    /*background: #D40F16;*/
+    background-color: @bg-color-red;
+    padding: 10px;
+    border-collapse: collapse;
+    margin: 0px;
+    color: #F0E302;
+}
+
+
+
+.TextLef {
+    text-align: start;
+    padding: 0px 0px 0px 2px;
+}
+
+.TextLef {
+    background-color: #FFC162;
+}
+
+
+.Textcenter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: @bg-color-red;
+    color: @white-color;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+.cdp {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    background: @bg-color-red;
+    color: @white-color;
+}
+
+/*RESPONSIVE DESIGN Pizzas Menu*/
+@media(max-width: 575px) {
+
+    .container-detalle thead{
+        display: none;
+    }
+
+
+    .container-detalle-sub, .container-detalle-sub .table tbody{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-detalle-sub td{
+        display: block;
+    }
+
+    .table{
+        width: 100%;
+    }
+
+    .backgroundGreen{
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        padding: 2px;
+    }
+
+    .container-detalle-sub .table tbody tr .precios{
+        text-align: right;
+        position: relative;
+        width: 180px;
+    }
+
+    .container-detalle-sub .table tbody tr{
+        padding-top: 5px;
+        margin: 0px 5px 0px 0px;
+    }
+
+    #borderResponsive{
+        border-radius: 0 0 10px 10px;
+    }
+
+     .table td::before{
+        content: attr(data-label);
+        position:absolute;
+        left: 0;
+        color: #F2F2F7;
+        width: 10%;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .ResponsivePuntos{
+        display: none;
+    }
+
+    .table .precios:hover{
+        cursor: pointer;
+        background: #FFC162;
+        transition: 1s all;
+        color: @white-color;
+    }
+}

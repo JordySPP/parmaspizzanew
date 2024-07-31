@@ -1,0 +1,23 @@
+<section class="Eventos">
+    <h2 class="TextCenterPE">Participación en eventos</h2>
+    <section class="Eventos-container">
+        {{#each eventos}}
+        <div class="Evento">
+            <div class="TextCenterAnio">
+                <h3>{{nombre}}</h3>
+            </div>
+            <div class="imgEvento">
+                <img src="{{imgSrc}}" alt="Evento">
+            </div>
+            <div class="TextEvento">
+                <h4 class="TextCenter">Lugar</h4>
+                <p class="TextCenter">{{lugar}}</p>
+                <h4 class="TextCenter">Fecha</h4>
+                <p class="TextCenter">{{fecha}}</p>
+                <h4 class="TextCenter">Hora</h4>
+                <p class="TextCenter">{{hora}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </section>
+</section>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Pagina: Contactenos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="less/estilo.less"/>
+</head>
+
+<body>
+    {{>header}}
+    {{contactenos}}
+    <div class="contenedor-ubicacion">
+        <h1>Nuestra ubicación</h1>
+        <div class="ubicacion">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.8188363938634!2d-88.78875068920988!3d14.779232085669017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f640948e86b65e9%3A0x5668c892e8b759a0!2sParma&#39;s%20Pizza%20Santa%20Rosa%20de%20Cop%C3%A1n!5e0!3m2!1ses-419!2shn!4v1712605729211!5m2!1ses-419!2shn"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="contenedor-formulario">
+        <h1>Nuestro equipo se pondrá en contacto contigo</h1>
+        <div class="formulario">
+            <form action="https://formsubmit.co/pizza-2016@hotmail.com" method="POST" id="contactoform">
+                <label class="titulo-formulario">Formulario</label>
+                <label for="txtNombre">Nombre completo:</label>
+                <input type="text" name="Nombre" id="txtNombre" placeholder="Nombres & Apellidos" required pattern=".*\S.*"/>
+                <br />
+                <label for="txtCorreo">Correo:</label>
+                <input type="email" name="Correo" id="txtCorreo" placeholder="correoelectro@gmail.com" required
+                    pattern=".*@gmail.com$" />
+                <br />
+                <label for="txtTelefono">Teléfono:</label>
+                <input type="text" name="Telefono" id="txtTelefono" placeholder="(504) XXXX-XXXX" required pattern=".*\S.*"/>
+                <br />
+                <label for="txtDepartamento">Departamento:</label>
+               
+                <br />
+                <label for="txtCiudad">Ciudad:</label>
+                <input type="text" name="Ciudad" id="txtCiudad" placeholder="Ciudad" required pattern=".*\S.*"/>
+                <br />
+                <label for="txtComentario">Comentario:</label>
+                <br />
+                <label for="txtDepartamento">Departamento:</label>
+                <select name="Departamento">
+                    <option value="0" selected>Seleccione</option>
+                    <option value="1">Atlántida</option>
+                    <option value="2">Choluteca</option>
+                    <option value="3">Colón</option>
+                    <option value="4">Comayagua</option>
+                    <option value="5">Copán</option>
+                    <option value="6">Cortés</option>
+                    <option value="7">El Paraíso</option>
+                    <option value="8">Francisco Morazán</option>
+                    <option value="9">Gracias a Dios</option>
+                    <option value="10">Intibucá</option>
+                    <option value="11">Islas de la Bahía</option>
+                    <option value="12">La Paz</option>
+                    <option value="13">Lempira</option>
+                    <option value="14">Ocotepeque</option>
+                    <option value="15">Olancho</option>
+                    <option value="16">Santa Bárbara</option>
+                    <option value="17">Valle</option>
+                    <option value="18">Yoro</option>
+                </select>
+                <textarea name="Comentario" id="txtComentario" rows="5" cols="30" placeholder="Comentario" required pattern=".*\S.*"></textarea>
+                <br />
+                <input type="submit" id="btnenviar" value="Enviar formulario" onClick="">
+                <input type="hidden" name="_next" value="https://edgarc575.github.io/contactenos.html" target="_blank">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </div>
+</body>
+
+{{>footer}}
+
+</html>

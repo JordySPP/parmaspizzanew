@@ -1,0 +1,142 @@
+.contenedor-info {
+    background-color: #ED1C24;
+    padding: 50px;
+    text-align: center;
+    border-top: 10px solid #fff;
+
+    h1 {
+        color: #fff;
+        margin: 10px 10px 20px 10px;
+        font-size: 1.5vh;
+    }
+
+    .info {
+        color: #fff;
+        margin: 10px;
+
+        h2 {
+            margin: 20px;
+        }
+    }
+}
+
+.contenedor-ubicacion {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+
+    .ubicacion {
+        background-color: #000;
+        padding-top: 25px;
+
+        iframe {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+.contenedor-formulario {
+    background-color: #00A651;
+    padding-top: 20px;
+    border-bottom: 10px solid #fff;
+
+    h1 {
+        text-align: center;
+        padding: 20px 0;
+        color: white;
+    }
+
+    .formulario {
+        background-color: #00A651;
+        margin: 0 250px 0 250px;
+        padding-bottom: 90px;
+        padding-top: 40px;
+
+        form {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5em;
+            border-radius: 50px;
+
+            &:hover {
+                transition: 1s all;
+                transform: scale(1.1);
+                border: 5px solid #FFDE17;
+            }
+
+            .titulo-formulario {
+                font-size: 1vh;
+            }
+
+            label {
+                color: #000;
+                margin: 10px;
+                font-size: 0.5vh;
+                font-weight: bold;
+            }
+
+            select,
+            textarea,
+            input {
+                font-size: 20px;
+                display: block;
+                margin: 0 0 20px;
+                padding: 25px 25px;
+                width: 50%;
+                border-radius: 10px;
+                cursor: pointer;
+                border: 3px solid #00A651;
+            }
+
+            #btnenviar:hover {
+                transition: 2s all;
+                border: 3px solid #FFDE17;
+                background-color: #FFDE17;
+            }
+        }
+    }
+}
+
+/*Responsive Design contacto*/
+@media (max-width: 893px) {
+    .contenedor-formulario {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .formulario {
+            form {
+                .titulo-formulario {
+                    font-size: 45px;
+                    color: #000;
+                }
+
+                label {
+                    color: #333;
+                    margin: 10px;
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+
+                select,
+                textarea,
+                input {
+                    font-size: 15px;
+                    color: #555;
+                    display: block;
+                    margin: 0 0 20px;
+                    padding: 25px 25px;
+                    width: 50%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    border: 3px solid #00A651;
+                }
+            }
+        }
+    }
+}
