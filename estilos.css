@@ -35,22 +35,15 @@ body header h1:hover {
 body header div {
     width: 150px;
     height: 150px;
-    /*background-color: #00A651;*/
     background-color: #009E60;
 }
 
 body header div img {
-    /*border: 2px solid #020258;*/
     width: 165px;
     height: 165px;
     margin: 0px 0px 0px 80px;
     transform: scale(2.2);
 }
-
-/*body header div img:hover{
-    transition: 1s all;
-    transform: scale(2.2);
-}*/
 
 body header nav ul {
     display: flex;
