@@ -5,12 +5,12 @@
     <title>Pagina: Contactenos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="less/estilo.less"/>
+    <link rel="stylesheet" href="less/estilo.less" />
 </head>
 
 <body>
     {{>header}}
-    {{contactenos}}
+    {{>contactenos}}
     <div class="contenedor-ubicacion">
         <h1>Nuestra ubicación</h1>
         <div class="ubicacion">
@@ -27,22 +27,22 @@
             <form action="https://formsubmit.co/pizza-2016@hotmail.com" method="POST" id="contactoform">
                 <label class="titulo-formulario">Formulario</label>
                 <label for="txtNombre">Nombre completo:</label>
-                <input type="text" name="Nombre" id="txtNombre" placeholder="Nombres & Apellidos" required pattern=".*\S.*"/>
+                <input type="text" name="Nombre" id="txtNombre" placeholder="Nombres & Apellidos" required
+                    pattern=".*\S.*" />
                 <br />
                 <label for="txtCorreo">Correo:</label>
                 <input type="email" name="Correo" id="txtCorreo" placeholder="correoelectro@gmail.com" required
                     pattern=".*@gmail.com$" />
                 <br />
                 <label for="txtTelefono">Teléfono:</label>
-                <input type="text" name="Telefono" id="txtTelefono" placeholder="(504) XXXX-XXXX" required pattern=".*\S.*"/>
+                <input type="text" name="Telefono" id="txtTelefono" placeholder="(504) XXXX-XXXX" required
+                    pattern=".*\S.*" />
                 <br />
-                <label for="txtDepartamento">Departamento:</label>
-               
+
+
                 <br />
                 <label for="txtCiudad">Ciudad:</label>
-                <input type="text" name="Ciudad" id="txtCiudad" placeholder="Ciudad" required pattern=".*\S.*"/>
-                <br />
-                <label for="txtComentario">Comentario:</label>
+                <input type="text" name="Ciudad" id="txtCiudad" placeholder="Ciudad" required pattern=".*\S.*" />
                 <br />
                 <label for="txtDepartamento">Departamento:</label>
                 <select name="Departamento">
@@ -66,7 +66,10 @@
                     <option value="17">Valle</option>
                     <option value="18">Yoro</option>
                 </select>
-                <textarea name="Comentario" id="txtComentario" rows="5" cols="30" placeholder="Comentario" required pattern=".*\S.*"></textarea>
+                <label for="txtComentario">Comentario:</label>
+                <br />
+                <textarea name="Comentario" id="txtComentario" rows="5" cols="30" placeholder="Comentario" required
+                    pattern=".*\S.*"></textarea>
                 <br />
                 <input type="submit" id="btnenviar" value="Enviar formulario" onClick="">
                 <input type="hidden" name="_next" value="https://edgarc575.github.io/contactenos.html" target="_blank">

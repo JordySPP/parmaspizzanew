@@ -1,6 +1,13 @@
-   <section id="preguntasfrecuentes">
-    {{#each preguntasfrecuentes}}
-    <h4>{{pregunta}}</h4>
-       <p>{{respuesta}}</p>
-    {{/each}}
-       </section>
+<div class="contenedor-main-preguntas-frecuentes">
+    <div class="contenedor-titulo">
+        <h1>Preguntas Frecuentes</h1>
+    </div>
+    <div class="contenedor-preguntas-frecuentes">
+        {{#each preguntasfrecuentes}}
+            <div class="preguntas-frecuentes">
+                <h2>{{pregunta}}</h2>
+                <p>{{{respuesta}}}</p>
+            </div>
+        {{/each}}
+    </div>
+</div>
